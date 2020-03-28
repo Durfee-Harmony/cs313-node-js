@@ -1,0 +1,25 @@
+express.static(root, [options])
+app.use('/static', express.static(path.join(__dirname, 'public')))
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 9 <%= title %></title>
+</head>
+
+<body>
+  <div>
+    <h3>Weight:</h3>
+    <p id="weight"><%= weight %></p>
+    <h3>Type of Mail:</h3>
+    <p id="mail"><%= mail %></p>
+    <h3>Rate:</h3>
+    <p id="rate">&#36;<%= rate %></p>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
