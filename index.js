@@ -5,9 +5,9 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: true
 });
-const cool = require('cool-ascii-faces')
-const express = require('express')
-const path = require('path')
+const cool = require('cool-ascii-faces');
+const express = require('express');
+const path = require('path');
 const PORT = process.env.PORT || 5000
 
 express()
@@ -19,7 +19,7 @@ express()
   .get('/db', async (req, res) => {
     try {
       const client = await pool.connect()
-      const result = await client.query('SELECT * FROM test_table');
+      const result = await client.query('SELECT * FROM quote');
       const results = {
         'results': (result) ? result.rows : null
       };
@@ -30,4 +30,4 @@ express()
       res.send("Error " + err);
     }
   })
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
