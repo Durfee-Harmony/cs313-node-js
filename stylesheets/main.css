@@ -1,0 +1,61 @@
+html {
+  background-color: white;
+  padding: 5px;
+}
+
+body {
+  background-color: #415a77;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+header {
+  display: inline-block;
+}
+
+div#quote-div {
+  background-color: #6D8DA0;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  display: grid;
+}
+
+div#quote,
+form#quote-form {
+  background-color: #6D8DA0;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+.q {
+  margin: 0;
+  padding: 0;
+}
+
+a.button:link,
+input.button:link {
+  font-family: 'Poppins',
+    sans-serif;
+  text-decoration: none;
+}
+
+a.quote:link {
+  padding: 0 1em;
+  min-width: 70px;
+  font-family: 'Poppins',
+    sans-serif;
+  text-decoration: none;
+}
+
+a.quote:visited {
+  color: #d1d1d1;
+}
+
+a.quote:hover {
+  color: #d1d1d1;
+  background-color: #415a77;
+}
