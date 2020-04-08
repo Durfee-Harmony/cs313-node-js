@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Quote Database - Project 2</title>
+  <title>All Quotes - Project 2</title>
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -18,17 +18,17 @@
           <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
         </li>
         <!-- <li>
-          <a href="/add"><span class="glyphicon glyphicon-info-sign"></span> Add Quote</a>
-        </li> -->
+        <a href="/add"><span class="glyphicon glyphicon-info-sign"></span> Add Quote</a>
+      </li> -->
       </ul>
     </div>
   </nav>
 
   <div class="container">
-    <h2>Quote Database</h2>
-
-    <a href="/db">All Quotes</a>
-
+    <% results.forEach(function(r) { %>
+      <h2><%= r.id %> - This is the quote detail page</h2>
+      <p><%= r.txt %></p>
+    <% }); %>
   </div>
 
 </body>
